@@ -10,10 +10,7 @@
     "eslint": "eslint --ext .js --ignore-path .gitignore .",
     "prettier:check": "prettier --check . --config .prettierrc",
     "prettier:fix": "prettier --write . --config .prettierrc",
-    "lint": "yarn eslint && yarn prettier:check",
-    "deploy:mainnet": "truffle migrate --network mainnet",
-    "deploy:kovan": "truffle migrate --network kovan",
-    "deploy:dev": "truffle migrate --skip-dry-run --network development"
+    "lint": "yarn eslint && yarn prettier:check"
   },
   "repository": {
     "type": "git",
