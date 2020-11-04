@@ -6,7 +6,7 @@ interface IDeployer {
 }
 
 contract Deployer {
-  IDeployer immutable deployer;
+  IDeployer immutable public deployer;
 
   constructor(IDeployer _deployer) public {
     // Use EIP-2470 SingletonFactory address by default
