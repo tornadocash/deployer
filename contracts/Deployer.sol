@@ -11,6 +11,7 @@ contract Deployer {
   constructor(IDeployer _deployer) public {
     // Use EIP-2470 SingletonFactory address by default
     deployer = address(_deployer) == address(0) ? IDeployer(0xce0042B868300000d44A59004Da54A005ffdcf9f) : _deployer;
+    emit Deployed(msg.sender, address(this));
   }
 
   event Deployed(address indexed sender, address indexed addr);
