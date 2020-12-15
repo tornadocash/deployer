@@ -1,5 +1,5 @@
 {
-  "name": "solidity-template",
+  "name": "eip2470-deployer",
   "version": "1.0.0",
   "description": "A template with all preferred configs",
   "main": "index.js",
