@@ -16,8 +16,8 @@ contract Deployer {
 
   event Deployed(address indexed sender, address indexed addr);
 
-  function deploy(bytes memory _initCode, bytes32 _salt) external {
-    address createdContract = deployer.deploy(_initCode, _salt);
+  function deploy(bytes memory _initCode, bytes32 _salt) external returns (address payable createdContract) {
+    createdContract = deployer.deploy(_initCode, _salt);
     require(createdContract != address(0), "Deploy failed");
     emit Deployed(msg.sender, createdContract);
   }
